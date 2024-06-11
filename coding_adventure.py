@@ -18,7 +18,6 @@ def main():
  def profiling():
      profiles = {'zen':profile_zen, 'angry':profile_angry, "smart":profile_smart, 'obsessed':profile_obsess, 'dependent':profile_dependent}
      winner = max(profiles, key=profiles.get)
-    #  print(profiles)
      print(analisis[winner])
      
 
@@ -128,7 +127,6 @@ and you are still nowhere close to resolving your coding issues...")
         elif command == "friend":
             current_situation = 'call_friend'
             profile_dependent += 1
-            # print('profile dependent added;', profile_dependent)
             print(situations['call_friend'])
             input("(Press <enter> to swallow some of your coder's pride...)")
             print("")
@@ -151,19 +149,16 @@ and you are still nowhere close to resolving your coding issues...")
             sleeping()
         elif command == "scream":
             profile_angry += 0.5
-            # print("state of angry profile: ", profile_angry)
             input("(Press <enter> to scream in that pillow and cry it out a little...)")
             current_situation = 'pillow'
             print(situations['pillow'])
         elif command == "f-word":
             profile_angry += 1
-            # print("state of angry profile: ", profile_angry)
             input("You breathe in all the air your lungs can admit and let out a magnificient angry FUUUUUUUUUUUU@#$% !!!<enter>")
             current_situation = 'cursing'
             print(situations[current_situation])
         elif command == "fuuu":
             profile_angry += 2
-            # print("state of angry profile: ", profile_angry)
             input("(Fffffffff......)")
             current_situation = 'cursing'
             cursing()
