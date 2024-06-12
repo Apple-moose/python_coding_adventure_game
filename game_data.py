@@ -87,6 +87,7 @@ START again because you are a Maniac or check updates on your coder's PROFILE to
     "duck success": "Incredible! Confessional Programming IS an actual working method for debugging and you are now \
 living proof of it. Going back to the code, you find that hidden bug and make everything running smoothly again. You feel smart \
 and adequate. TODO: Celebrate fully and check updates on your coder's PROFILE or on to the NEXT challenge??",
+    "todo": "'To do', get it?"
 }
  
 solutions = {
@@ -107,7 +108,8 @@ solutions = {
     "f-word": {"write code": "first options"},
     "slap": {"write code": "first options","dark": "dark", "back": "start", "coding": "first options"},
     "punch": {"write code": "first options", "better": "start", "calm down": "first options", "dark": "dark"},
-    "duck": {"rubber ducking": "rubber ducking", "next": "start", "options": "first options", "strangle": "strangle duck", "start": "start"},
+     "todo": {"rubber ducking": "rubber ducking", "next": "start", "options": "first options", "strangle": "strangle duck", "start": "start", "todo": "todo"},
+     "duck": {"rubber ducking": "rubber ducking", "next": "start", "options": "first options", "strangle": "strangle duck", "start": "start", "todo": "todo"},
     "rubber ducking": {"back": "duck"},
     "strangle duck": {"options": "first options", "abandon": "abandon", "dark": "dark"},
     "kitchen": {"back": "first options"},

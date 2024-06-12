@@ -46,6 +46,7 @@ def main():
 
  def cursing():
      if dice_throw(20):
+        print("\033c", end="")
         print(situations['angry endgame'])
         exit()
      else:
@@ -55,7 +56,7 @@ def main():
 
  def slap():
      if dice_throw(35):
-        print
+        print("\033c", end="")
         print(situations['slap endgame'])
         exit()
      else:
@@ -67,6 +68,7 @@ def main():
 
  def hammer():
      if dice_throw(50):
+        print("\033c", end="")
         print(situations['angry endgame'])
         exit()
      else:
@@ -140,6 +142,7 @@ and you are still nowhere close to resolving your coding issues...")
             current_situation = 'call_colleague'
             profile_dependent += 1
             print(situations['call_colleague'])
+            print("")
             input("(Press <enter> to swallow some of your coder's pride...)")
             print("")
             current_situation = 'start'
@@ -149,6 +152,8 @@ and you are still nowhere close to resolving your coding issues...")
             current_situation = 'chatgpt'
             profile_dependent += 2
             input("(Press <enter> and may the omnipotent A.I. one day rule the World!)")
+            print("")
+            input("Not yet. Again to formulate your querry more adequately...")
             print("")
             print(situations['chatgpt'])
         elif command == "sleep":
@@ -227,6 +232,7 @@ and you are still nowhere close to resolving your coding issues...")
         elif command == "profile":
             current_situation = "profile"
             input('Please take a deep breath and press <enter> to accept some constructive criticism...')
+            print("\033c", end="")
             print('')
             profiling()
             print("")
