@@ -62,7 +62,7 @@ def main():
         print("...silence...")
         print("")
         print("You just realized that you could have hit some sensitive equipment. \
-Maybe not do that again?")
+(Maybe not do that again?)")
         print("SLAP harder, explore more of the DARK side or come BACK to CODING?)")  
 
  def hammer():
