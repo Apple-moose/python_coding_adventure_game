@@ -37,7 +37,7 @@ def main():
         print("Still Nothing...Crap! continu y / n ?")
 
  def sleeping():
-     if dice_throw(50):
+     if dice_throw(55):
         current_situation = 'nap success'
         print(situations[current_situation])
      else:
@@ -54,7 +54,7 @@ def main():
         print("(Double down with FUUU or feel BETTER now?)")
 
  def slap():
-     if dice_throw(25):
+     if dice_throw(35):
         print
         print(situations['slap endgame'])
         exit()
@@ -78,9 +78,9 @@ Maybe not do that again?")
      if dice_throw(40):
          print(situations['duck success'])
      else:
-         print("You get into more and more details but nothing changes, you still find yourself blocked")
+         print("You get into more and more details but nothing changes, can't connect those dots...")
          print("")
-         print("...and maybe a bit sad...EXPLAIN some more, check you OPTIONS or just STRANGLE the rubber duck")
+         print("...so sad!...EXPLAIN in more details, check you OPTIONS or just STRANGLE the rubber duck")
 
 
  print("Welcome to the 'A Coder's Rhapsody Game'!")
@@ -98,6 +98,8 @@ Maybe not do that again?")
              current_situation = solutions[current_situation][command]
              print(situations[current_situation])
         elif command == "get to work":
+            print(f"{situations[current_situation]}.")
+        elif command == "work":
             print(f"{situations[current_situation]}.")
         elif command == "study":
             current_situation = 'study'
@@ -128,6 +130,15 @@ and you are still nowhere close to resolving your coding issues...")
             current_situation = 'call_friend'
             profile_dependent += 1
             print(situations['call_friend'])
+            input("(Press <enter> to celebrate and do a little dance...)")
+            print("")
+            current_situation = 'start'
+            input("The next day...")
+            print(situations['start'])
+        elif command == "colleague":
+            current_situation = 'call_colleague'
+            profile_dependent += 1
+            print(situations['call_colleague'])
             input("(Press <enter> to swallow some of your coder's pride...)")
             print("")
             current_situation = 'start'
@@ -156,6 +167,7 @@ and you are still nowhere close to resolving your coding issues...")
             profile_angry += 1
             input("You breathe in all the air your lungs can admit and let out a magnificient angry FUUUUUUUUUUUU@#$% !!!<enter>")
             current_situation = 'cursing'
+            print("")
             print(situations[current_situation])
         elif command == "fuuu":
             profile_angry += 2
@@ -179,11 +191,12 @@ and you are still nowhere close to resolving your coding issues...")
             current_situation = 'duck'
             input("You confess to the rubber duck...<enter>")
             input("He seems rather perplexed...")
+            print("")
             explain()
         elif command == "chocolate":
             profile_zen += 1
             current_situation = 'kitchen'
-            input('the chocolate <enter> your watering mouth')
+            input('the chocolate <enter>s your watering mouth')
             print("")
             print("Mmmmmh, Delicious!")
             print("")
@@ -197,7 +210,7 @@ and you are still nowhere close to resolving your coding issues...")
         elif command == "sandwich":
             profile_zen += 2
             current_situation = 'kitchen'
-            input('You insert all those wonderful ingredient between integral slices of bread...')
+            input('You insert all those wonderful ingredients between integral slices of bread...')
             print("")
             print("Best Sandwich Ever!")
             print("")
@@ -205,23 +218,22 @@ and you are still nowhere close to resolving your coding issues...")
         elif command == "break":
             profile_zen += 2
             current_situation = 'kitchen'
-            input('Press <enter> to check your phone...')
+            input('Press <enter> to pause and check the news on your phone...')
             print("")
             print("La la lah...ouh, what's up with that...")
             print("")
             print(situations['after break'])
         elif command == "profile":
             current_situation = "profile"
-            input('Please take a deep breath and press <enter> when you are ready')
+            input('Please take a deep breath and press <enter> to accept some constructive criticism...')
             print('')
             profiling()
             print("")
             print("Keep on CODING, QUIT or EXIT this mini game")
-
         elif command == "help":
             print(" ")
             print("Try typing keywords from the text, such as: duck, fridge, stack overflow...")
-            print("...'exit' to end the game or 'score' to watch over your psychological profile! ")
+            print("...'exit' to end the game or 'profile' to watch over your coder's profile! ")
         elif command == "quit":
             print('👿 Yeah, just what I thought 😈')
             break
