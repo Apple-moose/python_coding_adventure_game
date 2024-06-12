@@ -82,7 +82,8 @@ def main():
          print("")
          print("...so sad!...EXPLAIN in more details, check you OPTIONS or just STRANGLE the rubber duck")
 
-
+ print("\033c", end="")
+ print("")
  print("Welcome to the 'A Coder's Rhapsody Game'!")
  input("Press <enter> to start...")
  print(" ")
