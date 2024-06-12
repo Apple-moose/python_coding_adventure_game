@@ -94,7 +94,7 @@ def main():
  print("(type 'HELP' in case you are blocked)")
 
  while True:
-        command = input("-> ").lower()
+        command = input("👉 ").lower()
         if command in solutions[current_situation]:
              current_situation = solutions[current_situation][command]
              print(situations[current_situation])
