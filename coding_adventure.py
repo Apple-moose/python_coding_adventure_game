@@ -72,6 +72,7 @@ def main():
         print(situations['angry endgame'])
         exit()
      else:
+        print("")
         print("The wall still stands but it's getting weaker. Any moment....")
         print("")
         print("HAMMER further, explore more of the DARK side or feel BETTER now?)")
@@ -80,16 +81,16 @@ def main():
      if dice_throw(40):
          print(situations['duck success'])
      else:
-         print("You get into more and more details but nothing changes, can't connect those dots...")
+         print("You unfold the layers of your coding conundrum, but still can't connect those dots...")
          print("")
-         print("...so sad!...EXPLAIN in more details, check you OPTIONS or just STRANGLE the rubber duck")
+         print("...so sad!...EXPLAIN in more detail, check your OPTIONS or just STRANGLE the rubber duck")
 
  print("\033c", end="")
  print("")
  print("Welcome to the 'A Coder's Rhapsody Game'!")
  input("Press <enter> to start...")
  print(" ")
- print("A plausible situational and psychological analisis")
+ print("A plausible situational and psychological analysis")
  input("(Based on personal and shared experience)<enter>")
  print(" ")
  print("Please type 'GET TO WORK' when you feel ready to start!")
@@ -153,12 +154,11 @@ and you are still nowhere close to resolving your coding issues...")
             profile_dependent += 2
             input("(Press <enter> and may the omnipotent A.I. one day rule the World!)")
             print("")
-            input("Not yet. Again to formulate your querry more adequately...")
+            input("Oops, weird answer. Let's formulate that query more adequately...")
             print("")
             print(situations['chatgpt'])
         elif command == "sleep":
             current_situation = 'sleep'
-            print(current_situation)
             profile_smart += 1
             print(situations['sleep'])
             print("")
@@ -166,12 +166,12 @@ and you are still nowhere close to resolving your coding issues...")
             sleeping()
         elif command == "scream":
             profile_angry += 0.5
-            input("(Press <enter> to scream in that pillow and cry it out a little...)")
+            input("(Press <enter> to scream into that pillow and cry it out a little...)")
             current_situation = 'pillow'
             print(situations['pillow'])
         elif command == "f-word":
             profile_angry += 1
-            input("You breathe in all the air your lungs can admit and let out a magnificient angry FUUUUUUUUUUUU@#$% !!!<enter>")
+            input("You breathe in all the air your lungs can admit and let out a magnificent angry FUUUUUUUUUUUU@#$% !!!<enter>")
             current_situation = 'cursing'
             print("")
             print(situations[current_situation])
